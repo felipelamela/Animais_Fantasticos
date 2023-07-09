@@ -8,7 +8,6 @@ import { AnimaisDescricao } from '../../../../types/global'
 
 
 const AnimaisDescricao: React.FC<AnimaisDescricao> = ({ titulo, texto, ativo }) => {
-  console.log(texto)
   return (
     <section className={`${style.animaisDescricao} ${ativo}`}>
 
