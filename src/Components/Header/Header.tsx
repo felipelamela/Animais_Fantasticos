@@ -32,8 +32,8 @@ const Header = () => {
     <header className={style.menu}>
       <nav>
         <ul>
-          {linksDoMenu.map(link =>(
-            <LinkMenu nome={link.nome} href={link.href} />
+          {linksDoMenu.map((link, index) =>(
+            <LinkMenu key={index} nome={link.nome} href={link.href} />
           ))}
         </ul>
       </nav>

@@ -1,17 +1,18 @@
 import React from 'react'
 import style from './AnimaisDescricao.module.css'
 import Paragrafo from '../Paragrafo/Paragrafo'
-import Subtitlo from '../Subtitulo/Subtitlo'
+import Subtitulo from '../Subtitulo/Subtitulo'
 import { AnimaisDescricao } from '../../../../types/global'
 
 
 
 
 const AnimaisDescricao: React.FC<AnimaisDescricao> = ({ titulo, texto, ativo }) => {
+  console.log(texto)
   return (
     <section className={`${style.animaisDescricao} ${ativo}`}>
 
-      <Subtitlo texto={titulo} />
+      <Subtitulo texto={titulo} />
       <Paragrafo texto={texto} />
 
 

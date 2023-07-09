@@ -1,10 +1,10 @@
 import React from 'react'
 import { Texto } from '../../../../types/global'
 
-const Subtitlo:React.FC<Texto> = ({ texto }) => {
+const Subtitulo: React.FC<Texto> = ({ texto }) => {
   return (
     <h2>{texto}</h2>
   )
 }
 
-export default Subtitlo
+export default Subtitulo

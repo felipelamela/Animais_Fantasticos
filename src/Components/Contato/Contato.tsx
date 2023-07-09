@@ -21,8 +21,8 @@ const Contato: React.FC = () => {
         <img src="/img/mapa.png" alt="" />
       </div>
       <ul className={style.dados}>
-        {linksContato.map(link => (
-          <li><Paragrafo texto={link.texto} /></li>
+        {linksContato.map((link, index) => (
+          <li key={index}><Paragrafo texto={link.texto} /></li>
         ))}
       </ul>
 
