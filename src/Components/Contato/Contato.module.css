@@ -1,0 +1,28 @@
+.mapa {
+  grid-column: 2;
+}
+
+.dados {
+  grid-column: 3;
+}
+
+.dados li p {
+  margin: 0 0 1rem 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.dados li p::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin: 0 10px 0 0;
+  background: #ffbb55;
+}
+
+@media(max-width: 700px) {
+  .mapa,
+  .dados {
+    grid-column: 1/3;
+  }
+}

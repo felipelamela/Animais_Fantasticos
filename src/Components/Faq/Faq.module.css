@@ -1,0 +1,41 @@
+.faqLista {
+  grid-column: 2 /4;
+}
+
+.showDown dt {
+  font-family: monospace;
+  font-weight: bold;
+  margin: 2rem 0 .5rem 0;
+  color: #ee5544;
+  cursor: pointer;
+
+}
+
+
+.showDown dt::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin: 0 10px 0 0;
+  background: #ffbb55;
+
+}
+
+
+@keyframes showDD {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media(max-width: 700px){
+  .faqLista{
+    grid-column: 1/3;
+  }
+}
